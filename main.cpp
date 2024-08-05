@@ -19,6 +19,7 @@ public:
 
 class Solution {
 public:
+    //BruteForce two pair match to target
     vector<int> twoSum(vector<int>& nums, int target) {
         for (int i = 0; i < nums.size(); i++) {
             for (int j = i + 1; j < nums.size(); j++) {
@@ -48,6 +49,55 @@ public:
             }
         }
         return {};
+
+    }
+
+    vector<int> onePass(vector<int>& nums, int target){
+        unordered_map<int,int> hmap;
+
+        for (int i = 0; i < nums.size(); ++i){
+            int complement = target - nums[i];
+            if (hmap.find(complement) != hmap.end() && hmap[complement] != i) {
+                return {i, hmap[complement]};
+            }
+            hmap[nums[i]] = i;
+        }
+    }
+};
+
+class DistincStrinct {
+public:
+    string kthDistinct(vector<string>& arr, int k) {
+        int n = arr.size();
+        vector<string> diffString; // difstring = []
+
+        for (int i = 0; i < n; i++){
+            bool isDistinct = true;
+            
+
+            for(int j = 0; j < n; ++j ){
+                if (arr[i] != arr[j])
+                {
+                    isDistinct = true;
+                    break;
+                }
+                isDistinct = false;
+            }
+        
+            if (!isDistinct){
+                diffString.push_back(arr[i]);
+            }
+        }
+
+        if (diffString.size() < k )
+        {
+            return "";
+        }
+
+        return diffString[k - 1];
+        
+
+        
 
     }
 };
@@ -84,8 +134,15 @@ int main() {
     Soulution2 sol2;
     vector<int> solver = sol2.twoSum(num, target);
 
-    cout << "HashTable: ";
+    cout << " Two pass  HashTable: ";
     for (int i : solver) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    vector<int> solverOpt = sol2.onePass(num, target);
+    cout << "One Pass HashTable: ";
+    for (int i : solverOpt) {
         cout << i << " ";
     }
     cout << endl;
