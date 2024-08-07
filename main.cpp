@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
+#include "hashSet.cpp"
 
 using namespace std;
 // A simple function to add two numbers
@@ -161,6 +162,12 @@ int main() {
     string kTh = dis.kthDistinct(arr, k);
     cout << "k-Th Distinct String: "<< kTh  << endl;
       
+    cout << "-===========" << endl;
+
+    hashSet dis2;
+    string solu = dis2.kth_DistinctHashSet(arr, k);
+    cout << "k-Th Distinct String hash set: "<< solu  << endl;
+
 
     return 0;
 }
