@@ -62,10 +62,12 @@ public:
             }
             hmap[nums[i]] = i;
         }
+
+        return {};
     }
 };
 
-class DistincStrinct {
+class DistincStinct {
 public:
     string kthDistinct(vector<string>& arr, int k) {
         int n = arr.size();
@@ -76,19 +78,21 @@ public:
             
 
             for(int j = 0; j < n; ++j ){
-                if (arr[i] != arr[j])
+                if (arr[i] == arr[j] && i != j)
                 {
-                    isDistinct = true;
+                    isDistinct = false;
                     break;
                 }
-                isDistinct = false;
+                isDistinct = true;
             }
         
-            if (!isDistinct){
+            if (isDistinct){
                 diffString.push_back(arr[i]);
             }
         }
 
+
+        // cout << diffString;
         if (diffString.size() < k )
         {
             return "";
@@ -146,10 +150,17 @@ int main() {
         cout << i << " ";
     }
     cout << endl;
-
     
+    cout <<" =================" << endl;
 
 
+    DistincStinct dis;
+
+    vector<string> arr = {"d","b","c","b","c","a"};
+    int k = 2;
+    string kTh = dis.kthDistinct(arr, k);
+    cout << "k-Th Distinct String: "<< kTh  << endl;
+      
 
     return 0;
 }
