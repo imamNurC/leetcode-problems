@@ -8,5 +8,7 @@ file.exe
 compiling/*.o
 compiling/*.p
 compiling/*.exe
+compiling/compile.o
+compiling/compiled.p
 data_types/*.o
 data_types/*.p
