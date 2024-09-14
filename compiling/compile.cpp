@@ -2,9 +2,11 @@
 
 // namespace std;
 
+const char* Linker();
+
 int main( /*int argc, char const *argv[] */)
 {
-    std:: cout << "Tesss Stringg!!" << std::endl;    
+    std:: cout << Linker()<< std::endl;    
     // int a = 0;
     // int b = 0;
     return 0;
@@ -27,9 +29,20 @@ g++ -E <file_target>.cpp  > <output_compile>.p
 
 
 #COMPILE
-g++ -c <file_target>.cpp
+g++ -c <file_target>.cpp  || Output = <result>.o
+
 #show deassemble
-objdump -d <file_target>.cpp
+objdump -d <file_target>.o
+
+#LINKING = after Compile the result is object file(.o) which can use multiple  
+
+
+#EXECUTABLE w/LINKING
+g++ <file_target>.cpp || Output = <result>.out || ./<resullt>.out
+=======OR==========
+g++ <obj_file>.o || Output = <result>.out || ./<resullt>.out
+
+
 
 
 

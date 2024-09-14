@@ -1,2 +1,12 @@
 a.exe
-.vscode
+.vscode/*
+# hasil.exe
+# result.exe
+file.exe
+# compiled.p
+
+compiling/*.o
+compiling/*.p
+compiling/*.exe
+data_types/*.o
+data_types/*.p
