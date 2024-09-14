@@ -4,7 +4,7 @@
 # 1 "compile.cpp"
 # 1 "C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/iostream" 1 3
 # 36 "C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/iostream" 3
-       
+        
 # 37 "C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/iostream" 3
 
 # 1 "C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/c++config.h" 1 3
