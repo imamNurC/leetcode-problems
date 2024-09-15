@@ -1,0 +1,23 @@
+1
+2
+3
+4
+5
+=========POINTERS====== 
+nums :42 ||  memory address of nums: 0x6f7cdffbbc
+=========REFERENCES========= 
+numb :45 ||  alias memory address of numb : 45
+============User Defined Data Types============ 
+============Struct============ 
+Name: John Doe
+Age: 30
+Height: 5.9
+============Class============ 
+Name: Agus, Age: 25
+============Union============ 
+1067282596
+¤
+1.23
+The value of num is: 3
+2147483647
+-2147483648

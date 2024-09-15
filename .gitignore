@@ -12,3 +12,4 @@ compiling/compile.o
 compiling/compiled.p
 data_types/*.o
 data_types/*.p
+data_types/*.exe
