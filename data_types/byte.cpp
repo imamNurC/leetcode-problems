@@ -91,11 +91,12 @@ int main() {
 
     Data d;
     d.num = 11;
-    d.letter = 'A';
-    d.decimal = 1.23;
-
     cout << d.num << endl ;
+
+    d.letter = 'd';
     cout << d.letter << endl ;
+
+    d.decimal = 1.23;
     cout << d.decimal << endl ;
 
 

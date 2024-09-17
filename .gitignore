@@ -5,6 +5,9 @@ a.exe
 file.exe
 # compiled.p
 
+*.exe
+*.o
+*.p
 compiling/*.o
 compiling/*.p
 compiling/*.exe

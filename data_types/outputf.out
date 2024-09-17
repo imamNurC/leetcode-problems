@@ -4,7 +4,7 @@
 4
 5
 =========POINTERS====== 
-nums :42 ||  memory address of nums: 0x6f7cdffbbc
+nums :42 ||  memory address of nums: 0x71609ffa4c
 =========REFERENCES========= 
 numb :45 ||  alias memory address of numb : 45
 ============User Defined Data Types============ 
@@ -15,8 +15,8 @@ Height: 5.9
 ============Class============ 
 Name: Agus, Age: 25
 ============Union============ 
-1067282596
-¤
+11
+d
 1.23
 The value of num is: 3
 2147483647
