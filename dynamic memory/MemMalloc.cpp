@@ -48,6 +48,15 @@ int main(int argc, char const *argv[])
 	}  
 
 
+	cout << "Elemen dalam alokasi :" << "\n";
+	for (int i = 0; i < var_len; ++i)
+	{
+		cout << *(ptrn+i) << " ";
+	}
+
+	cin.get();
+	cout << "\n";
+
     // when the program is press enter dynamically deallocated of the memory 
     if (cin.get() == '\n')
     {

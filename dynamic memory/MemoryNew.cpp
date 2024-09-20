@@ -24,5 +24,12 @@ int main(int argc, char const *argv[])
 	cout << "value : " << *ptr << endl;
 
 
+
+	// dynamically input
+
+	int size;
+
+	cin << "Enter the size of elements : " << "\n"
+
 	return 0;
 }

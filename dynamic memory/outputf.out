@@ -1,4 +1,4 @@
-Memory has been allocated at address 0x25ceb041540
+Memory has been allocated at address 0x23e65f51540
 4
 ======================================
 Enter a number : 
@@ -6,3 +6,5 @@ Enter a number :
 Enter a number : 
 Enter a number : 
 Enter a number : 
+Elemen dalam alokasi :
+1710583600 574 1710555472 574 1710561456 
