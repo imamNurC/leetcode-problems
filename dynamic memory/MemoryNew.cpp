@@ -15,21 +15,40 @@ int main(int argc, char const *argv[])
 	// int *ptr = (int* )mall
 
 	int* ptr;
+	int size; 
 
-	ptr = new int;
-	*ptr = 11;
+	cout << "Masukkan n Alokasi Array : " ;
+	cin >> size;
+
+	ptr = new int[size];
+	// *ptr = size;
 
 
-	cout << "address : " <<  ptr << endl;
-	cout << "value : " << *ptr << endl;
+	for (int i = 0; i < size; ++i){
+
+		cout << "Masukkan nilai pada index-" << i + 1 << "= ";
+		// memasukkan tiap value dari panjang alokasi yang sudah di sediakan 
+		cin >> *(ptr+i);
+
+	}	
 
 
+
+	cout << "\nelemen dalam array" << "\n";
+	for (int i = 0; i < size; ++i)
+	{
+		// cout << "address : " <<  ptr << endl;
+		cout << "value : " << *(ptr+i) << endl;
+	}
+
+
+	delete[] ptr;
 
 	// dynamically input
 
-	int size;
+	// int size;
 
-	cin << "Enter the size of elements : " << "\n"
+	// cin << "Enter the size of elements : " << "\n"
 
 	return 0;
 }

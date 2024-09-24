@@ -87,8 +87,35 @@ int main()
 
 
   /// MY CODE GOES HERE
-  vector<int> vect = {2, 4, 10,  12, 17};
+
+
+  vector<int> vect = {};
   set<int> set1;
+
+  int size;
+
+  int* ptr;
+  cout <<  "Enter the size of elements : \n";
+  cin >> size;
+
+  ptr = new int[size];
+
+  for (int i = 0; i < size; ++i) {
+    cout << "index ke - " << i+1 << " = \n";
+    cin >> *(ptr+i);
+
+    vect.push_back(*(ptr+i));
+  }
+
+
+  for (int i = 0; i < size; ++i) {
+
+    cout << "val : " << vect[i] << "\n"; // for debug purpose
+
+  }
+
+
+  delete[] vect[];
 
 
   // First operation

@@ -1,0 +1,2 @@
+Masukkan n Alokasi Array : 
+elemen dalam array
