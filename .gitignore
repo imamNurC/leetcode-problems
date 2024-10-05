@@ -1,5 +1,5 @@
 a.exe
-.vscode/*
+*.json
 # hasil.exe
 # result.exe
 file.exe
