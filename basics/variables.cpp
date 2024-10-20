@@ -1,12 +1,17 @@
 #include <iostream>
+#include <vector>
+#include <string>
+
 using namespace std;
-// initial value 
 
-int main(int argc, char const *argv[])
+int main()
 {
-    
-int a=0;
-int b(0);
+    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
 
-    return 0;
+    
+    for (const string& word : msg)
+    {
+        cout << word << " ";
+    }
+    cout << endl;
 }
