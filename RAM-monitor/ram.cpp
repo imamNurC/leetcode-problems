@@ -7,7 +7,7 @@ void memoryUsageBar(){
 	MEMORYSTATUSEX memStatus; // structure to hold info status memory
 	memStatus.dwLength = sizeof(MEMORYSTATUSEX); // set the structure size
 
-	// const int barLength = 50;
+	const int barLength = 50;
 
 	while(true){
 		if (GlobalMemoryStatusEx(&memStatus))
@@ -29,6 +29,25 @@ void memoryUsageBar(){
 			std::cout << "used memory :" << usedMem << " MB" << std::endl;
 			std::cout << "memory usage :" << int(memUsePercent*100) << " MB" << std::endl;
 
+
+			//Progress Bar
+			std::cout << "[ ";
+
+			int curr = barLength * memUsePercent;
+			for (int i = 0; i < barLength; ++i)
+			{
+				if (i < curr)
+				{
+					std::cout << "=";					
+				}else if (i == curr)
+				{
+					std::cout << "=";					
+				}else{
+					std::cout << " ";
+				}
+			}
+
+			std::cout << " ]" << int(memUsePercent*100) << "% \n";
 
 			std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 		}else{
