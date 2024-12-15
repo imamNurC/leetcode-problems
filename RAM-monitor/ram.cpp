@@ -10,7 +10,7 @@ void memoryUsageBar(){
 	const int barLength = 50;
 
 	while(true){
-		if (GlobalMemoryStatusEx(&memStatus))
+		if (GlobalMemoryStatusEx(&memStatus)) // current memory status
 		{
 
 			// total physical memory
@@ -64,4 +64,4 @@ int main(int argc, char const *argv[])
 	
 	memoryUsageBar();
 	return 0;
-}
+=
